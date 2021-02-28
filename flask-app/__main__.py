@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 from .openweather_proxy import OpenWeatherProxy
 from .constants import N_ELEMS_RETURNED, NOT_FOUND, INTERNAL_ERROR
 
-app = Flask(__name__, static_folder='../static')
+app = Flask(__name__, static_folder='../svelte-app/public', static_url_path='')
 openweather_proxy = OpenWeatherProxy()
 
 

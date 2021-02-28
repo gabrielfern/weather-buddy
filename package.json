@@ -1,0 +1,8 @@
+{
+  "name": "weather-buddy",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "cd svelte-app; npm install; npm run build"
+  }
+}
