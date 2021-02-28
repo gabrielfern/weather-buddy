@@ -33,5 +33,11 @@ def index():
     return app.send_static_file('index.html')
 
 
+@app.after_request
+def cors(resp):
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
+
+
 if __name__ == '__main__':
     app.run()
