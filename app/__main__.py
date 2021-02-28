@@ -1,9 +1,9 @@
 from urllib.error import HTTPError
 from flask import Flask, jsonify, request
-from openweather_proxy import OpenWeatherProxy
-from constants import N_ELEMS_RETURNED, NOT_FOUND, INTERNAL_ERROR
+from .openweather_proxy import OpenWeatherProxy
+from .constants import N_ELEMS_RETURNED, NOT_FOUND, INTERNAL_ERROR
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../static')
 openweather_proxy = OpenWeatherProxy()
 
 

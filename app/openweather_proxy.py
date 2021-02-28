@@ -1,8 +1,8 @@
 import urllib
 import json
-from city_cache import CityCache
 from time import time
-from constants import OPENWEATHER_API_URL, OPENWEATHER_API_KEY
+from .city_cache import CityCache
+from .constants import OPENWEATHER_API_URL, OPENWEATHER_API_KEY
 
 
 class OpenWeatherProxy:
