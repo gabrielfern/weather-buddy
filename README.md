@@ -39,3 +39,7 @@ If you prefer you can also run the app using Docker.
 # Heroku
 
 You can easily deploy to Heroku, just remember to set `OPENWEATHER_API_KEY` and add buildpacks for python and node.
+
+# Unit Tests
+
+> python -m tests
